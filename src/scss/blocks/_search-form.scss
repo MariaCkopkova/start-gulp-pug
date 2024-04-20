@@ -1,0 +1,40 @@
+.search-wrapper {
+        display: none;
+        height: remy(73);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: remy(73);
+        background-color: whitesmoke;
+        padding: remy(10);
+        box-shadow: 0 remy(10) remy(25) rgba(9, 0, 88, 0.863);
+        &.form--open{
+                display: block;
+        }
+}
+.form-item {
+        position: relative;
+        width: 100%;
+        input {
+                width: 100%;
+                display: block;
+                height: remy(50);
+                border: remy(1) solid burlywood;
+                padding-inline: remy(50);
+                &::placeholder {
+                        color: rgb(218, 167, 25);
+                }
+        }
+}
+.search-form {
+        width: 100%;
+        column-gap: remy(70);
+        .search-btn, .reset-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+        }
+        .reset-btn { right: remy(15);}
+        .search-btn { left: remy(15);}
+}

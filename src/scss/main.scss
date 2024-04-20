@@ -1,0 +1,12 @@
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+@import './base/icons';
+@import './base/cards';
+@import './base/buttons';
+
+
+
+@import './blocks/*.scss';
+@import './about/*.scss';
+@import './contacts/*.scss';

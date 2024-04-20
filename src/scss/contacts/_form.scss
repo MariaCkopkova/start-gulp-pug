@@ -1,0 +1,34 @@
+.form-wrapper {
+        background-color: wheat;
+}
+.form {
+        max-width: remy(500);
+        padding: remy(20);
+        margin: remy(30) auto;
+        background-color: #fff;
+        box-shadow: 0 remy(10) remy(25) rgba(9, 0, 88, 0.863);
+        input {
+                color: rgba(1, 2, 73, 0.89);
+        }
+}
+.form-group {
+        margin-bottom: remy(20);
+}
+.form-control {
+        display: block;
+        width: 100%;
+        height: remy(40);
+        padding: remy(10) remy(12);
+        border: remy(1) solid #ccc;
+        margin-bottom: remy(5);
+      &:focus {
+        border-color: red;
+      }
+}
+.form-control.textarea {
+        min-height: remy(150);
+        max-height: remy(500);
+        resize: vertical;
+        color: rgba(1, 2, 73, 0.89);
+}
+

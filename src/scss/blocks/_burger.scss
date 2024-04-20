@@ -1,0 +1,52 @@
+.menu-toggle {
+        display: none;
+        z-index: 5;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: remy(30);
+        height: remy(30);
+}
+@media (max-width: remy(991)) {
+        .menu-toggle {
+                display: flex;
+        }
+}
+.menu-toggle span {
+        position: relative;
+        height: remy(2);
+        width: 100%;
+        border-radius: remy(3);
+        background-color: rgb(218, 167, 25);
+        transition: 0.2s;
+}
+.menu-toggle span::after,
+.menu-toggle span::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: remy(3);
+        background-color: rgb(218, 167, 25);
+        border-radius: remy(3);
+        transition: .2s;
+}
+.menu-toggle span::after {
+        top: remy(-7);
+}
+.menu-toggle span::before {
+        bottom: remy(-7);
+}
+.active.menu-toggle span {
+        background-color: transparent !important;
+}
+.active.menu-toggle span::after {
+        top: 0;
+        transform: rotate(45deg);
+        background-color: rgb(218, 167, 25);
+}
+.active.menu-toggle span::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        background-color: rgb(218, 167, 25);
+}

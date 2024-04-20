@@ -1,0 +1,13 @@
+extends ../layouts/layout
+
+block content
+      +header
+      main.main
+            .container
+                form.form
+                        input.form-control(type="text" placeholder="Имя")
+                        .form-group
+                              textarea.form-control.textarea(placeholder='Текст')
+                        a(href="#!")
+                              button.btn(type='submit') Отправить
+      +footer

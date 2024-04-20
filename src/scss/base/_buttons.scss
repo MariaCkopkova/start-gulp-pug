@@ -1,0 +1,30 @@
+.btn{
+        display: inline-block;
+        min-width: remy(237);
+        height: remy(68);
+        line-height: remy(68); /* чтобы текст встал посередине*/
+        text-align: center; /* это если будет ссылка в кнопке а */
+        border-radius: remy(34);
+        font-family: inherit;
+        background-color: rgb(5, 113, 185);
+        color: rgb(247, 247, 252);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: remy(0.75);
+        cursor: pointer;
+        white-space: nowrap;
+        transition: 0.3s;
+        flex-shrink: 0;
+        @media (max-width:remy(767)){
+                width: 100%;
+                min-width: remy(210);
+        }
+}
+.btn:hover {
+        background-color: rgb(6, 146, 240);
+        //background-color: lighten(var(--accent), 10%);
+}
+.btn:focus {
+        background-color: rgb(6, 146, 240);
+        outline: remy(9) solid rgb(188, 218, 238);
+}

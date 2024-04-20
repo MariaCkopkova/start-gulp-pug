@@ -1,0 +1,29 @@
+.article {
+        max-width: remy(500);
+        margin: remy(30) auto;
+        background-color: #fff;
+        color: #424242;
+        box-shadow: 0 remy(10) remy(25) rgb(0, 0, 88);
+        &-header {
+                img {
+                        display: block;
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                }
+
+        }
+        &-content{  padding: remy(20);}
+        &-title {
+                margin: 0 0 remy(20);
+                font-size: remy(35);
+                line-height: 1.2;
+        }
+        &-text {
+                margin-bottom: remy(20);
+        }
+        &-footer {
+                color: #D2D2D2;
+                
+        }
+}

@@ -1,0 +1,23 @@
+mixin header
+        .header
+                .logo LOGO
+                nav.nav#header-menu
+                        a(href='index.html') Index.html
+                        a(href='about.html') About.html
+                        a(href='contacts.html') Contacts.html
+                button.search-open#search-open
+                        span Search
+                        svg.svg-search
+                                use(href="./img/icons/sprites/solid.svg#magnifying-glass")
+                .search-wrapper#search-form
+                        form.search-form
+                                .form-item
+                                        input(type="text" placeholder="Search")
+                                        button(type="submit").search-btn
+                                                svg.svg-search
+                                                        use(href="./img/icons/sprites/solid.svg#magnifying-glass")   
+                                        button(type="reset").reset-btn#search-close
+                                                svg.svg-xms
+                                                        use(href="./img/icons/sprites/solid.svg#xmark")
+                button.menu-toggle#menu-toggle
+                        span

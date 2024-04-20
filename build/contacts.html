@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>My Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav" id="header-menu"><a href="index.html">Index.html</a><a href="about.html">About.html</a><a href="contacts.html">Contacts.html</a></nav>
+        <button class="search-open" id="search-open"><span>Search</span>
+          <svg class="svg-search">
+            <use href="./img/icons/sprites/solid.svg#magnifying-glass"></use>
+          </svg>
+        </button>
+        <div class="search-wrapper" id="search-form">
+          <form class="search-form">
+            <div class="form-item">
+              <input type="text" placeholder="Search"/>
+              <button class="search-btn" type="submit">
+                <svg class="svg-search">
+                  <use href="./img/icons/sprites/solid.svg#magnifying-glass">  </use>
+                </svg>
+              </button>
+              <button class="reset-btn" type="reset" id="search-close">
+                <svg class="svg-xms">
+                  <use href="./img/icons/sprites/solid.svg#xmark"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        <button class="menu-toggle" id="menu-toggle"><span></span></button>
+      </div>
+      <main class="main">
+        <div class="container">
+          <form class="form">
+            <input class="form-control" type="text" placeholder="Имя">
+            <div class="form-group">
+              <textarea class="form-control textarea" placeholder="Текст"></textarea>
+            </div><a href="#!">
+              <button class="btn" type="submit">Отправить</button></a>
+          </form>
+        </div>
+      </main>
+      <div class="footer">
+        <div class="container">
+          <p>Footer</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        column-gap: remy(20);
+        flex-wrap: wrap;
+        max-width: remy(800);
+        margin: remy(30) auto;
+        @media (max-width: remy(1200)){
+                grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: remy(991)){
+                grid-template-columns: repeat(1, 1fr);
+        }
+}
+.card {
+        padding: remy(20);
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 remy(10) remy(25) rgba(9, 0, 88, 0.863);
+        margin-bottom: remy(30);
+
+        h5 {
+                font-size: remy(20);
+                &::after {
+                        content: "";
+                        display: block;
+                        width: remy(30);
+                        height: remy(2);
+                        margin: remy(10) auto remy(10);
+                        background-color: red;
+                }
+        }
+        p {
+                font-size: remy(12);
+                margin-bottom: remy(10);
+        }
+        & :is(h5, p) {
+                color: rgb(0, 162, 255);
+        }
+}
+.cards li{
+        transform: translate(0, 100%);
+        opacity: 0;
+        transition: transform 0.3s ease 0s;
+}
+.cards.active li{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: transform 0.3s ease 0s;
+}
+.cards {
+        &.active {
+                li {
+                        @for $var from 1 to 9 {
+                                $delay: $var * 0.2;
+                                &:nth-child(#{$var}) {
+                                        @if $var==1 {
+                                                transition: transform 0.8s ease 0s;
+                                        } @else {
+                                                transition: transform 0.8s ease (#{$delay} + s);
+                                        }
+                                }
+                        }
+                }
+        }
+}
+

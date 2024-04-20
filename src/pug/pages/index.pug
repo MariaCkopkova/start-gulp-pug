@@ -1,0 +1,17 @@
+extends ../layouts/layout
+block content
+      +header
+      main.main
+            .container
+                  h1.articel-title Привет!
+                  .photo
+                        img(src="./img/cat.jpg", alt="Cat")
+                  ul.cards.anim-items.anim-no-hide
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'Записаться')
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'Oтправить')
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'On')
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'Записаться')
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'On')
+                        +card('cat02', 'Заголовок', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.', 'On')
+      +footer
+            
